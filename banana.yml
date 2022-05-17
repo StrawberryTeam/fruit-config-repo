@@ -1,0 +1,18 @@
+server:
+  port: 8101
+  service-code: "11"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://fruit:fruit-space@eureka.res.zlizhe.com/eureka/
+  #instance:
+  #  statusPageUrlPath: ${server.servletPath}/info
+  #  healthCheckUrlPath: ${server.servletPath}/health
+
+spring:
+  # 当前配置文件
+  profiles:
+    active: default
+
+from: banana-default-config:16:39
